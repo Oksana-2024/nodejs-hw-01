@@ -8,7 +8,7 @@ const generateContacts = async (number) => {
     const newContact = createFakeContact();
     contacts.push(newContact);
   }
-  writeContacts(contacts);
+  await writeContacts(contacts);
 };
 
 generateContacts(5);

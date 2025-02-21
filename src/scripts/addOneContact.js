@@ -6,7 +6,7 @@ export const addOneContact = async () => {
   const contacts = await readContacts();
   const newContact = createFakeContact();
   contacts.push(newContact);
-  writeContacts(contacts);
+  await writeContacts(contacts);
 };
 
 addOneContact();
